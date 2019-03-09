@@ -2,8 +2,8 @@ language: bash
 os: windows
 env:
  - CONFIG=Release PLATFORM=x64
- script:
-  - cmd /c "dir \"c:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\""
+script:
+ - cmd /c "dir \"c:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\""
 
 branches:
   only:
