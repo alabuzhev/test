@@ -3,8 +3,8 @@ os: windows
 env:
  - CONFIG=Release PLATFORM=x64
 script:
- - dir "c:/Program Files (x86)"
- - dir "c:/Program Files"
+ - dir "c:/Program Files (x86)" /s /b
+ - dir "c:/Program Files" /s /b
  - cd "c:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64"
  - ./cl.exe
  - ls -la
