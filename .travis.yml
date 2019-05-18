@@ -3,15 +3,14 @@ os: windows
 env:
  - CONFIG=Release PLATFORM=x64
 script:
- - ls -lR "/c/Program Files (x86)/Microsoft Visual Studio/2017"
- - ls -lR /c/ProgramData/chocolatey
- - dir /c/ProgramData/chocolatey/lib/mingw/tools/install/mingw64
- - dir "c:/Program Files (x86)"
- - dir "c:/Program Files"
+ - #ls -lR "/c/Program Files (x86)/Microsoft Visual Studio/2017"
+ - #ls -lR /c/ProgramData/chocolatey
+ - #dir /c/ProgramData/chocolatey/lib/mingw/tools/install/mingw64
+ - #dir "c:/Program Files (x86)"
+ - #dir "c:/Program Files"
  - cd "c:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64"
  - ./cl.exe
  - ls -la
- - mingw32-make
 
 branches:
   only:
